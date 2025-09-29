@@ -48,4 +48,10 @@ Google Images. (n.d.) Image – JMrCqdA91UHRxKjmx. Available at: https://share.g
 Raising Org. (n.d.) Twitter. Available at: https://twitter.com/RaisingOrg (Accessed: 26 August 2025).
 Microsoft Corporation. (2022). Visual Studio(version 17.5)[Computer software]. Available at:https://visualstudio.microsoft.com/(Accessed:29 September 2025)
 
-
+# Changes Log 
+## 1. index page
+Added more content on the index page like advised
+## 2. gallery page
+Added more images like advised
+## 3. Referencing
+Added  tools that i worked with as refernce
