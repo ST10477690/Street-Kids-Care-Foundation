@@ -1,18 +1,18 @@
 # Street Kids Care Foundation
-ST10477690 , Olona Wele
-Overview of the Organisation
+# ST10477690 , Olona Wele
+## Overview of the Organisation
 The Street Kids Care Foundation (SKCF) is its name.
-Goal:
+### Goal:
 To help street children reintegrate into society with dignity and hope by offering them education, rehabilitation, and shelter.
-Vision
+## Vision:
 a society in which all children have access to safety, education, and love, and no child is compelled to live on the streets.
 Website Objectives & Goals
-Principal Objectives:
+## Principal Objectives:
 Raise Awareness: Inform guests about the predicament faced by homeless children.
 •	Encourage Donations: Make safe online sponsorships and donations possible.
 •	Find Volunteers: Permit volunteers to sign up for volunteer programs.
 •	Highlight Impact: Disseminate project updates, yearly reports, and success stories.
-KPIs, or key performance indicators:
+## KPIs, or key performance indicators:
 KPI Assessment
 Monthly Contributions 			R50,000+ in Year 1 
 Sign-ups for volunteers			Volunteers 1000+ per year

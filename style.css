@@ -336,6 +336,13 @@ footer .socials a{
     
 }  
 
+.ul{
+    position: relative;
+    font-size: 1em;
+    text-align: left;
+    color: #000;
+}
+
 
  .gallery{
     background-image: none;
