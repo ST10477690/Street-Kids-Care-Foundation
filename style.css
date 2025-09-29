@@ -1,0 +1,358 @@
+body{
+    background-color: #E2EAF4;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+#wrapper{
+    max-width: 960px;
+    background-color: #98F5F9;
+    margin: 0 auto;
+   padding: 0 20px;
+}
+
+header{
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 10px 40px;
+
+}
+
+header .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+
+header nav{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+header nav ul li a:hover{
+    color:#007acc
+}
+
+header img{
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#toplinks{
+    position: absolute;
+    width: 500px;
+    top: 100px;
+}
+
+#toplinks li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:link{
+    text-align: center;
+    color: #070606;
+}
+
+a:visited{
+    color: #f89279;
+}
+
+
+.currentPage{
+    color: #9ace;   
+}
+
+.clearFix{
+    clear: both;
+}
+
+.hero-section{
+    background-image: url(_Images/picture8_nbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    position: relative ;  
+    
+}
+
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 0;
+}
+
+.hero-section h1{
+    position: relative;
+    color: white;
+    font-size: 2.5em;
+    z-index: 1;
+}
+
+section{
+    padding: 20px 30px;
+    background-color: #fff;
+}
+
+#homeInfo{
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-size: 2em;
+    color: #070606;
+    padding-left: 30px;
+    border-bottom: 1px solid thin #070606;
+    padding-bottom: 15px;
+    margin: 0%;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin: 0px;
+    
+}
+
+p{
+    font-size: 1em;
+   margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    color: #070606;
+    font-size: 0.7em;
+    padding: 10px 0;
+    
+}
+
+#bottomLinks li{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#about{
+    background-image: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+}
+
+#about .logo img{
+    width: auto;
+    max-height: 120px;
+    display: block;
+}
+
+#about .header-text{
+    flex: 1;
+    padding-left: 20px;
+}
+
+#about .hero-section{
+    position: relative;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px 40px;
+}
+
+#about .hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+}
+
+#about .content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#about h1{
+    font-size: 2em;
+    letter-spacing: normal;
+}
+
+#about h2{
+    font-size: 1.5em;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+#about p{
+    font-size: 1em;
+    text-align: left;
+}
+
+#products_services{
+    background-image: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+}
+
+.hero-section{
+    background-size: cover;
+    background-position: center;
+    padding: 30px 40px;
+    width: 120%;
+}
+
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+}
+
+.logo img{
+    width: auto;
+    max-height: 120px;
+    display: block;
+}
+
+
+
+
+.content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    
+}  
+
+
+ #gallery{
+    background-image: none;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+#gallery img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+#about, #products_services, #gallery, #contact_us{
+    background-image: none;
+    padding-left: 25px;
+}
+
+#about h1, #products_services h1, #contact_us h1{
+    font-size: 1.7em;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+#about p, #products_services p, #contact_us{
+    font-size: 1em;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+#contact_us{
+    float: none;
+    
+}
+
+#contact_us .hero-section{
+    position: relative;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
