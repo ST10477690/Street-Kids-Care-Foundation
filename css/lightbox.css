@@ -44,8 +44,7 @@ body:after {
 /* line 35, ../sass/lightbox.sass */
 .lb-outerContainer {
   position: relative;
-  background-color: white;
-  *zoom: 1;
+  background-color: white;  
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -139,8 +138,7 @@ body:after {
 /* line 96, ../sass/lightbox.sass */
 .lb-dataContainer {
   margin: 0 auto;
-  padding-top: 5px;
-  *zoom: 1;
+  padding-top: 5px;  
   width: 100%;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
