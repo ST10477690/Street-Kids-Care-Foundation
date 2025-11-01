@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Street Kids Care Foundation Contact Us Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="hero-section">
         <main>
-            <div id="logo"><img src="_Images/The_street_kids_foundation_logo_nbg.png.png" alt="The The_street_kids_foundation_logo_nbg"></div>
+            <div id="logo"><img src="_Images/The_street_kids_foundation_logo_nbg.png.png"
+                    alt="The The_street_kids_foundation_logo_nbg"></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                <li><a href="products_services.html">Products and Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li class="currentPage">Contact Us</li>
+                    <li><a href="products_services.html">Products and Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="currentPage">Contact Us</li>
                 </ul>
-            
+
             </nav>
         </main>
     </header>
@@ -37,17 +40,108 @@
         <p><strong>Thursdays</strong>: 9am - 5pm</p>
         <p><strong>Fridays</strong>: 9am - 5pm</p>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.499251134565!2d27.89048!3d-26.11526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959fbb3a09d921%3A0xd7005067d41f1147!2s771%20Bridal%20Veil%20Cres%2C%20Little%20Falls%2C%20Roodepoort%2C%201735!5e0!3m2!1sen!2sza!4v1755799112787!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.499251134565!2d27.89048!3d-26.11526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959fbb3a09d921%3A0xd7005067d41f1147!2s771%20Bridal%20Veil%20Cres%2C%20Little%20Falls%2C%20Roodepoort%2C%201735!5e0!3m2!1sen!2sza!4v1755799112787!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIBIFezeiKBU_4CyF-eEQ6aESYgEpMCwV-z1294qn_Fy9pyg/viewform?embedded=true" width="600" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIBIFezeiKBU_4CyF-eEQ6aESYgEpMCwV-z1294qn_Fy9pyg/viewform?embedded=true" width="600" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            -->
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeIBIFezeiKBU_4CyF-eEQ6aESYgEpMCwV-z1294qn_Fy9pyg/formResponse"
+            method="POST" target="_self">
 
-        
+            Please fill out the form below to get in touch with us:<br><br>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" value="Your name here" onfocus="this.value=''"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" value="Your email here" onfocus="this.value=''">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" rows="4" cols="50"
+                            onfocus="this.value=''">Your message here</textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="myProv">Province</label></td>
+                    <td>
+                        <select id="myProv" name="entry.2005620554">
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Mpumalanga">Mpumalanga</option>
+                            <option value="North West">North West</option>
+                            <option value="Free State">Free State</option>
+                            <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                            <option value="Eastern Cape">Eastern Cape</option>
+                            <option value="Western Cape">Western Cape</option>
+                            <option value="Northern Cape">Northern Cape</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="contactMethod">Preferred Contact Method:</label></td>
+                    <td>
+                        <input type="radio" id="contactEmail" name="contactMethod" value="Email">
+                        <label for="contactEmail">Email</label>
+                        <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+                        <label for="contactPhone">Phone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="myGender">Gender:</label></td>
+                    <td>
+                        <input type="checkbox" id="genderMale" name="genderMale" value="Male">
+                        <label for="genderMale">Male</label>
+                        <input type="checkbox" id="genderFemale" name="genderFemale" value="Female">
+                        <label for="genderFemale">Female</label>
+                        <input type="checkbox" id="genderOther" name="genderOther" value="Other">
+                        <label for="genderOther">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit"
+                            onclick="alert('Thank you for contacting The Street Kids Care Foundation! We will get back to you shortly.')">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+
     </main>
 
     <footer>
-        
+
     </footer>
-    
-    
+
+    <script>
+        // below is the function to show alert on form submission
+        function validateForm() {
+            alert("Thank you for contacting The Street Kids Care Foundation! We will get back to you shortly.");
+        }
+        // check if name field is empty
+        var validateName = document.getElementById("name").value;
+        if (validateName === "") {
+            alert("Please enter your name.");
+            return false;
+        }
+        // check if email field is empty
+        var validateEmail = document.getElementById("email").value;
+        if (validateEmail === "") {
+            alert("Please enter your email.");
+            return false;
+        } else { alert("Form submitted successfully!"); }
+
+            document.getElementById("contactForm").onsubmit = validateForm;
+        
+
+    </script>
+
+
 </body>
+
 </html>
