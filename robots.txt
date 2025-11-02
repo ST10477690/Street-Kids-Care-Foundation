@@ -1,0 +1,15 @@
+# robots.txt for The Street Kids Care Foundation
+# This file instructs search engine crawlers on which parts of the website can be accessed or restricted.
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.streetkidscarefoundation.org/sitemap.xml
+
+# Notes:
+# - "User-agent: *" applies to all web crawlers.
+# - The /admin/ and /private/ directories are blocked to protect sensitive information.
+# - All other sections of the website are allowed to be indexed.

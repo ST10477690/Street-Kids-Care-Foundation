@@ -55,3 +55,8 @@ Added more content on the index page like advised
 Added more images like advised
 ## 3. Referencing
 Added  tools that i worked with as refernce
+
+# Added info
+Added a separate enquiry form
+Added a contact form in the contact us page
+Added a sitemap
