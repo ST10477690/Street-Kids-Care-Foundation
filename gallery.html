@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Street Kids Care Foundation Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Lightbox styles - hidden by default */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            /* Ensure it is on top of everything */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Dark overlay */
+        }
+
+        /* Show the lightbox when its ID is targeted by the URL fragment */
+        .lightbox:target {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Image and Caption Container */
+        .lightbox-content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+        }
+
+        /* Modal Image Styles */
+        .lightbox-content {
+            max-width: 100%;
+            max-height: 80vh;
+            /* Viewport Height to ensure it fits */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Modal Caption */
+        .lightbox-caption {
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+        }
+
+        /* The Close Button */
+        .close-button {
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            text-decoration: none;
+            line-height: 1;
+            /* Keep the 'x' centered */
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Navigation Arrows (Prev/Next) */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.6s ease;
+            user-select: none;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* General gallery layout adjustment for better visibility - assuming original CSS provided layout */
+        .gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery-section article {
+            margin: 10px;
+            flex: 1 1 20%;
+            /* For a responsive grid-like structure */
+            text-align: center;
+        }
+
+        .gallery-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-section img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products_services.html">Products and Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="currentPage">Gallery</li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="Gallery">
+            <section class="gallery-section">
+                <h1>Our Gallery</h1>
+                <p>Moments from our programs and events</p>
+
+                <article id="col1">
+                    <a href="#lightbox1">
+                        <img src="_Images/street_kids_foto_nbg.png.png" alt="street_kids_foto_nbg">
+                    </a>
+                    <figcaption>graph 1</figcaption>
+
+                    <div id="lightbox1" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox13">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/street_kids_foto_nbg.png.png"
+                                alt="street_kids_foto_nbg">
+                            <div class="lightbox-caption">graph 1</div>
+                        </div>
+                        <a class="next" href="#lightbox2">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox2">
+                        <img src="_Images/street_kids_graph_nbg.png.png" alt="street_kids_graph_nbg">
+                    </a>
+                    <figcaption>graph 2</figcaption>
+
+                    <div id="lightbox2" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox1">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/street_kids_graph_nbg.png.png"
+                                alt="street_kids_graph_nbg">
+                            <div class="lightbox-caption">graph 2</div>
+                        </div>
+                        <a class="next" href="#lightbox3">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col2">
+                    <a href="#lightbox3">
+                        <img src="_Images/street_kids_photo_nbg.png.png" alt="street_kids_photo_nbg">
+                    </a>
+                    <figcaption>graph 3</figcaption>
+
+                    <div id="lightbox3" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox2">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/street_kids_photo_nbg.png.png"
+                                alt="street_kids_photo_nbg">
+                            <div class="lightbox-caption">graph 3</div>
+                        </div>
+                        <a class="next" href="#lightbox4">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox4">
+                        <img src="_Images/street_kids_picture_nbg.png.png" alt="street_kids_picture_nbg">
+                    </a>
+                    <figcaption>graph 4</figcaption>
+
+                    <div id="lightbox4" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox3">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/street_kids_picture_nbg.png.png"
+                                alt="street_kids_picture_nbg">
+                            <div class="lightbox-caption">graph 4</div>
+                        </div>
+                        <a class="next" href="#lightbox5">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col3">
+                    <a href="#lightbox5">
+                        <img src="_Images/photo1_nbg.png.png" alt="photo1_nbg">
+                    </a>
+                    <figcaption>graph 5</figcaption>
+
+                    <div id="lightbox5" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox4">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/photo1_nbg.png.png" alt="photo1_nbg">
+                            <div class="lightbox-caption">graph 5</div>
+                        </div>
+                        <a class="next" href="#lightbox6">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox6">
+                        <img src="_Images/picture2_nbg.png.png" alt="picture2_nbg">
+                    </a>
+                    <figcaption>graph 6</figcaption>
+
+                    <div id="lightbox6" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox5">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture2_nbg.png.png" alt="picture2_nbg">
+                            <div class="lightbox-caption">graph 6</div>
+                        </div>
+                        <a class="next" href="#lightbox7">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col4">
+                    <a href="#lightbox7">
+                        <img src="_Images/picture3_nbg.png.png" alt="picture3_nbg">
+                    </a>
+                    <figcaption>graph 7</figcaption>
+
+                    <div id="lightbox7" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox6">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture3_nbg.png.png" alt="picture3_nbg">
+                            <div class="lightbox-caption">graph 7</div>
+                        </div>
+                        <a class="next" href="#lightbox8">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox8">
+                        <img src="_Images/picture4_nbg.png.png" alt="picture4_nbg">
+                    </a>
+                    <figcaption>graph 8</figcaption>
+
+                    <div id="lightbox8" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox7">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture4_nbg.png.png" alt="picture4_nbg">
+                            <div class="lightbox-caption">graph 8</div>
+                        </div>
+                        <a class="next" href="#lightbox9">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col5">
+                    <a href="#lightbox9">
+                        <img src="_Images/picture5_nbg.png.png" alt="picture5_nbg">
+                    </a>
+                    <figcaption>graph 9</figcaption>
+
+                    <div id="lightbox9" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox8">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture5_nbg.png.png" alt="picture5_nbg">
+                            <div class="lightbox-caption">graph 9</div>
+                        </div>
+                        <a class="next" href="#lightbox10">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox10">
+                        <img src="_Images/picture6_nbg.png.png" alt="picture6_nbg">
+                    </a>
+                    <figcaption>graph 10</figcaption>
+
+                    <div id="lightbox10" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox9">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture6_nbg.png.png" alt="picture6_nbg">
+                            <div class="lightbox-caption">graph 10</div>
+                        </div>
+                        <a class="next" href="#lightbox11">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col6">
+                    <a href="#lightbox11">
+                        <img src="_Images/picture7_nbg.png.png" alt="picture7_nbg">
+                    </a>
+                    <figcaption>graph 11</figcaption>
+
+                    <div id="lightbox11" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox10">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture7_nbg.png.png" alt="picture7_nbg">
+                            <div class="lightbox-caption">graph 11</div>
+                        </div>
+                        <a class="next" href="#lightbox12">&#10095;</a>
+                    </div>
+
+
+                    <a href="#lightbox12">
+                        <img src="_Images/picture8_nbg.png.png" alt="picture8_nbg">
+                    </a>
+                    <figcaption>graph 12</figcaption>
+
+                    <div id="lightbox12" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox11">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture8_nbg.png.png" alt="picture8_nbg">
+                            <div class="lightbox-caption">graph 12</div>
+                        </div>
+                        <a class="next" href="#lightbox13">&#10095;</a>
+                    </div>
+                </article>
+
+                <article id="col7">
+                    <a href="#lightbox13">
+                        <img src="_Images/picture9_nbg.png.png" alt="picture9_nbg">
+                    </a>
+                    <figcaption>graph 13</figcaption>
+
+                    <div id="lightbox13" class="lightbox">
+                        <a href="#_" class="close-button">&times;</a>
+                        <a class="prev" href="#lightbox12">&#10094;</a>
+                        <div class="lightbox-content-container">
+                            <img class="lightbox-content" src="_Images/picture9_nbg.png.png" alt="picture9_nbg">
+                            <div class="lightbox-caption">graph 13</div>
+                        </div>
+                        <a class="next" href="#lightbox1">&#10095;</a>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 The Street Kids Care Foundation</p>
+        <p>Email: justintime@gmail.com | Phone:062 045 8219</p>
+        <div class="socials">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
